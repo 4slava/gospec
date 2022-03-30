@@ -35,7 +35,7 @@ func main() {
 
 			if err != nil {
 				fmt.Println(err)
-				return
+				continue
 			}
 			//fmt.Println("i=", i)
 			if i < len(intSli) {
