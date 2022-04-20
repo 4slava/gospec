@@ -126,13 +126,10 @@ func main() {
 	sli3 := unsortSli[2*partLen : 3*partLen]
 	sli4 := unsortSli[3*partLen : len(unsortSli)]
 	fmt.Println(unsortSli)
-	wg.Add(1)
+	wg.Add(4)
 	go sortSli("Part 1", sli1, &wg)
-	wg.Add(1)
 	go sortSli("Part 2", sli2, &wg)
-	wg.Add(1)
 	go sortSli("Part 3", sli3, &wg)
-	wg.Add(1)
 	go sortSli("Part 4", sli4, &wg)
 	wg.Wait()
 	fmt.Printf("Part 1 sorted: %v\n", sli1)
