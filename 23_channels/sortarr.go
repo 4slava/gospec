@@ -1,4 +1,3 @@
-/*
 package main
 
 import (
@@ -77,4 +76,3 @@ func main() {
 	sort.Ints(sortingSli)
 	fmt.Println("Entire sorted list: ", sortingSli)
 }
-*/
